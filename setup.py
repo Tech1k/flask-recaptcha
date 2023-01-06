@@ -1,27 +1,26 @@
-
 from setuptools import setup, find_packages
-import flask_recaptcha
+import flask_turnstile
 
-PACKAGE = flask_recaptcha
+PACKAGE = flask_turnstile
 
 setup(
     name=PACKAGE.__NAME__,
     version=PACKAGE.__version__,
     license=PACKAGE.__license__,
     author=PACKAGE.__author__,
-    author_email='mardix@pylot.io',
-    description="The new Google ReCaptcha implementation for Flask without Flask-WTF",
+    author_email='kristian@kk.dev',
+    description="A Cloudflare Turnstile extension for Flask based on flask-recaptcha",
     long_description=PACKAGE.__doc__,
-    url='http://github.com/mardix/flask-recaptcha/',
-    download_url='http://github.com/mardix/flask-recaptcha/tarball/master',
-    py_modules=['flask_recaptcha'],
+    url='http://github.com/tech1k/flask-turnstile/',
+    download_url='http://github.com/tech1k/flask-turnstile/tarball/master',
+    py_modules=['flask_turnstile'],
     include_package_data=True,
     install_requires=[
         "flask",
         "requests",
         "MarkupSafe"
     ],
-    keywords=['flask', 'recaptcha', "validate"],
+    keywords=['flask', 'turnstile', "validate"],
     platforms='any',
     classifiers=[
         'Environment :: Web Environment',
