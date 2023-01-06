@@ -2,6 +2,8 @@ from setuptools import setup, find_packages
 import flask_turnstile
 
 PACKAGE = flask_turnstile
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
     name=PACKAGE.__NAME__,
@@ -10,9 +12,9 @@ setup(
     author=PACKAGE.__author__,
     author_email='kristian@kk.dev',
     description="A Cloudflare Turnstile extension for Flask based on flask-recaptcha",
-    long_description=PACKAGE.__doc__,
-    url='http://github.com/tech1k/flask-turnstile/',
-    download_url='http://github.com/tech1k/flask-turnstile/tarball/master',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url='http://github.com/Tech1k/flask-turnstile/',
     py_modules=['flask_turnstile'],
     include_package_data=True,
     install_requires=[
