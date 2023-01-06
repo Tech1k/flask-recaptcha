@@ -1,0 +1,26 @@
+name: flask_turnstile_CI_tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ 3.8, 3.9, 3.11 ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade pre-commit
+      - name: Run tests
+        run: |
+          python -m pytest
