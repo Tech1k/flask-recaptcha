@@ -10,7 +10,7 @@ setup(
     version=PACKAGE.__version__,
     license=PACKAGE.__license__,
     author=PACKAGE.__author__,
-    author_email='kristian@kk.dev',
+    author_email='kristian@kristiankramer.net',
     description="A Cloudflare Turnstile extension for Flask based on flask-recaptcha",
     long_description=long_description,
     long_description_content_type='text/markdown',
