@@ -6,7 +6,7 @@ __NAME__ = "Flask-Turnstile"
 __version__ = "0.1.1"
 __license__ = "MIT"
 __author__ = "Kristian (originally ReCaptcha by Mardix)"
-__copyright__ = "(c) 2023 Kristian (originally ReCaptcha by Mardix 2015)"
+__copyright__ = "(c) 2023-2024 Kristian (originally ReCaptcha by Mardix 2015)"
 
 try:
     from flask import request

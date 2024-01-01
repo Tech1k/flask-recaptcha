@@ -111,4 +111,4 @@ TURNSTILE_SECRET_KEY = ""
 ---
 
 (c) 2015 Mardix
-(c) 2023 Kristian
+(c) 2023-2024 Kristian
